@@ -1,0 +1,136 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	font-family: "Orbitron", sans-serif;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+#root,
+#__next {
+	isolation: isolate;
+}
+
+.heading {
+    width: 400px;
+    text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 400px;
+	height: 500px;
+	padding: 10px 30px 30px;
+    margin-top: 75px;
+	background-color: #c7cdd2;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 8px 16px rgba(0, 0, 0, 0.15),
+		0 16px 32px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.clear {
+	flex: 1;
+	border: none;
+	border-radius: 4px;
+	margin: 25px 20px;
+	background-color: #975670;
+	color: #fff;
+	font-weight: bold;
+	box-shadow: 0px 6px #814b5a;
+	transition: all 0.2s ease;
+}
+
+.clear:hover {
+	background-color: #975f6f;
+}
+
+.clear:active {
+	box-shadow: 0px 2px #975f6f;
+	transform: translateY(4px);
+}
+
+.output {
+	font-size: 30px;
+	height: 60px;
+	background-color: #cee0e3;
+	background: linear-gradient(to bottom, #eaf1f4, #cee0e3);
+	border: 1px solid #a7bac7;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.15);
+	text-align: end;
+	padding: 5px 15px;
+	margin-top: 10px;
+}
+
+button {
+	min-width: 60px;
+	border: none;
+	border-radius: 4px;
+	padding: 10px;
+	background-color: #393f44;
+	color: #fff;
+	font-weight: bold;
+	box-shadow: 0px 6px #2f3439;
+	transition: all 0.2s ease;
+	margin-bottom: 15px;
+}
+
+button:hover {
+	background-color: #4d5358;
+}
+
+button:active {
+	box-shadow: 0px 2px #2f3439;
+	transform: translateY(4px);
+}
+
+input {
+	width: 300px;
+	margin: 5px;
+}
+
